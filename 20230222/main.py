@@ -94,4 +94,13 @@ logging.basicConfig(level=logging.DEBUG,filename='data.log', filemode='a', forma
 #     logging.info("I'm still in the finally block")
 
 
-#2 
+# #2 
+#  try:
+# #   c = a / b
+# # except ZeroDivisionError as e:
+# #     logging.error(f"Exception occurred: {e}") #, exc_info=True
+# # else:
+# #     c = a / b
+# #     logging.info("I'm skipping else clause")
+# # finally:
+# #     logging.info("I'm still in the finally block")
