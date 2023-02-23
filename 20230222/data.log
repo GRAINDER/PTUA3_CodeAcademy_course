@@ -1,0 +1,39 @@
+22/02/2023 18:43:32 - root - DEBUG - This is a debug message
+22/02/2023 18:43:32 - root - INFO - This is an info message
+22/02/2023 18:43:32 - root - WARNING - This is a warning message
+22/02/2023 18:43:32 - root - ERROR - This is an error message
+22/02/2023 18:43:32 - root - CRITICAL - This is a critical message
+22/02/2023 18:43:32 - root - WARNING - Received numbers a {a} and b {b}
+22/02/2023 18:46:41 - root - WARNING - Received numbers a {a} and b {b}
+22/02/2023 18:51:15 - root - WARNING - Received numbers a {a} and b {b}
+22/02/2023 18:53:58 - root - WARNING - Received numbers a {a} and b {b}
+22/02/2023 18:57:44 - root - WARNING - Received numbers a {a} and b {b}
+22/02/2023 19:07:00 - root - DEBUG - This is a debug message [1, 2, 3, 4, 5, 6]
+22/02/2023 19:07:29 - root - DEBUG - This is a debug message [2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 4]
+22/02/2023 19:24:24 - root - DEBUG - This is first debug try and my input numbers are: [5, 6, 4]
+22/02/2023 19:24:26 - root - INFO - This is first debuging info message and my input numbers are: [125]
+22/02/2023 19:24:28 - root - WARNING - This is first debuging warning message and my input numbers are: [2, 2, 6]
+22/02/2023 19:24:30 - root - ERROR - This is first error warning message and my input numbers are: [1, 4, 8]
+22/02/2023 19:24:31 - root - CRITICAL - This is first critical warning message and my input numbers are: [2, 3, 6]
+22/02/2023 19:29:02 - root - INFO - Received numbers a {first_debbuger}
+22/02/2023 19:29:45 - root - INFO - Received numbers a: [1, 2, 3]
+22/02/2023 19:35:31 - root - INFO - Received numbers of my first input debbuger: [1]
+22/02/2023 19:35:33 - root - INFO - Age of user is: 15
+22/02/2023 19:35:33 - root - WARNING - User is under 18
+22/02/2023 19:54:29 - root - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\37064\repos\PTUA3_CodeAcademy_course\20230222\main.py", line 87, in <module>
+    c = a / b
+        ~~^~~
+ZeroDivisionError: division by zero
+22/02/2023 19:54:54 - root - ERROR - Exception occurred
+22/02/2023 19:55:26 - root - ERROR - Exception occurred
+22/02/2023 19:59:35 - root - ERROR - Exception occurred
+22/02/2023 19:59:58 - root - ERROR - Exception occurred
+22/02/2023 19:59:58 - root - INFO - I'm still in the finally block
+22/02/2023 20:00:37 - root - ERROR - Exception occurred: division by zero
+22/02/2023 20:00:37 - root - INFO - I'm still in the finally block
+22/02/2023 20:16:15 - root - ERROR - Exception occurred: division by zero
+22/02/2023 20:16:15 - root - INFO - I'm still in the finally block
+22/02/2023 20:16:33 - root - ERROR - Exception occurred: division by zero
+22/02/2023 20:16:33 - root - INFO - I'm still in the finally block
