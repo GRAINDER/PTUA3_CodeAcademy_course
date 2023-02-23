@@ -103,4 +103,4 @@ logging.basicConfig(level=logging.DEBUG,filename='data.log', filemode='a', forma
 # #     c = a / b
 # #     logging.info("I'm skipping else clause")
 # # finally:
-# #     logging.info("I'm still in the finally block")
+# #     logging.info("I'm still in the finally block")git 
