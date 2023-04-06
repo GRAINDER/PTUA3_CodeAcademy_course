@@ -1,0 +1,5 @@
+2023-03-21 20:59:49 - sLogger - main2 - DEBUG - debug message
+2023-03-21 20:59:49 - sLogger - main2 - INFO - info message
+2023-03-21 20:59:49 - sLogger - main2 - WARNING - warn message
+2023-03-21 20:59:49 - sLogger - main2 - ERROR - error message
+2023-03-21 20:59:49 - sLogger - main2 - CRITICAL - critical message
