@@ -41,5 +41,8 @@ print(my_products.name, my_products.price, my_products.quantity)
 my_products = Product(1, "apple", 2.5, 2).total_cost()
 print(my_products)
 
+my_products = Product(product_id=2, name="Banana", price=2, quantity=5).total_cost()
+print(my_products)
+
 
 
