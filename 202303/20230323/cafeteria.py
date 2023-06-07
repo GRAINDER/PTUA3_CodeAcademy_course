@@ -1,6 +1,6 @@
 # Cafeteria project : Create an live menu and payment system (a.k.a console program) :
 
-#     Providing your full name the program should ask if table was reserved/not on spefic time or date. 
+#     Providing your full name the program should ask if table was reserved or not on spefic time and  date. 
 #     And then if not program would assign you a table (there is a specific number single, double or family tables) . 
 #     After table is assigned to you, system should show how many free tables are and how which are reserved. 
 #     The system must be able to show name/surname of the person of the reserved table (CLI option : enter reserved table nuber ; OUTCOME: Name/Surname/Time Reserved)
@@ -112,7 +112,7 @@
 #         pass
      
 #      def put_order():
-#         pass
+# #         pass
      
 
 
@@ -120,40 +120,25 @@
 
 table_reservation = {
     "Table_one": {
-        "Name": "Antanas",
-        "Surname": "Antanėlis",
+        "Name": "P",
+        "Surname": "D",
         "Time": "16:00",
-        "Size": "Single"
+        "Size": "Single",
+        "Status": "Reserved"
     },
     "Table_two": {
-        "Name": "Jonas",
-        "Surname": "Jonelis",
-        "Time": "18:00",
-        "Size": "Double"
+        "Name": "",
+        "Surname": "",
+        "Time": "",
+        "Size": "Double",
+        "Status": "Available"
     },
     "Table_three": {
-        "Name": "Petras",
-        "Surname": "Petraitis",
-        "Time": "19:30",
-        "Size": "Family"
-    },
-    "Table_four": {
         "Name": "",
         "Surname": "",
         "Time": "",
-        "Size": "Single"
-    },
-    "Table_four": {
-        "Name": "",
-        "Surname": "",
-        "Time": "",
-        "Size": "Double"
-    },
-    "Table_four": {
-        "Name": "",
-        "Surname": "",
-        "Time": "",
-        "Size": "Family"
+        "Size": "Family",
+        "Status": "Available"
     }
 }
 
@@ -170,29 +155,36 @@ for table, reservation in table_reservation.items():
         break # čia kažkaip reikės paduoti meniu kad rinktusi
 else:
     # jei stalas nerezervuotas siūlo pasirinkti stalą
-    available_table = ""
     for table, reservation in table_reservation.items():
-        if reservation["Size"] == table_size and reservation["Name"] == "":
-            available_table = table
-            break
+        if reservation["Size"] != name and reservation["Name"] == "" and reservation["Time"] == "":
+            print(reservation["Size"])
+        break
 
-    if available_table == "":
-        print(f"Sorry, there are no reservation for {name} {surname}. Would you like to reserve a table?")
-        response = input("Enter 'Yes' or 'No': ")
-        if response.lower() == "yes":
-            print("Great! Available tables sizes are: Single, Double and Family.")
-            table_size = input("Enter table size: ")
-            for table, reservation in table_reservation.items():
-                if reservation["Size"] == "table_size" and reservation["Name"] == "":
-                    available_table = table
-                    break
-            else:
-                print(f"Sorry, no {table_size} tables are available.")
-        else:
-            print("Table not reserved.")
-            available_table = ""
+    # if available_table == table:
+    #     print(f"Sorry, there are no reservation for {name} {surname}. Would you like to reserve a table?")
+    #     response = input("Enter 'Yes' or 'No': ")
+    #     if response.lower() == "yes":
+    #         if reservation["Name"] == "":
+    #             print("Available tables sizes are: ")
+    #             print(table_reservation.values()["Name"])
+            
 
-    # jei stalas neuzimtas rezervuoja
-    if available_table is not None:
-        table_reservation[available_table] = {"Name": name, "Surname": surname, "Time": time, "Size": table_size}
-        print(f"Table {available_table} ({table_size}) reserved for {name} {surname} at {time}.")
+    #         table_size = input("Enter table size: ")
+    #         for table, reservation in table_reservation.items():
+    #             if reservation["Name"] == "" and reservation["Name"] == "":
+    #                 print(available_table)
+    #                 break
+    #         else:
+    #             print(f"Sorry, no {table_size} tables are available.")
+    #     else:
+    #         print("Table not reserved.")
+    #         available_table = ""
+
+    # # jei stalas neuzimtas rezervuoja
+    # if available_table is not None:
+    #     table_reservation[available_table] = {"Name": name, "Surname": surname, "Time": time, "Size": table_size}
+    #     print(f"Table {available_table} ({table_size}) reserved for {name} {surname} at {time}.")
+
+
+
+

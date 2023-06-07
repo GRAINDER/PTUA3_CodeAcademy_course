@@ -1,7 +1,6 @@
 from login import login, register
 from UserTaskHANDLER import TaskHandler, UserHandler
 from UserTaskDB import User, Task
-
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, DateTime, Boolean
 from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.ext.declarative import declarative_base
@@ -17,7 +16,6 @@ Base = declarative_base()
 session = Session()
 user_handler = UserHandler(session)
 task_handler = TaskHandler(session)
-
 
 
 

@@ -23,7 +23,7 @@ def register():
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    user = User(name= name, email=email, password=password)
+    user = User(name=name, email=email, password=password)
     session.add(user)
     session.commit()
 
@@ -41,7 +41,7 @@ def login():
     if user is not None and user.password == password:
         print('Login successful!')
     while True:
-        print('1. Add task\n2. Delete task\n3. Update task\n4. Logout')
+        print('1. Add task\n2. Delete task\n3. Update task\n4. Overview tasks\n5. Logout')
         choice = input('Enter your choice: ')
         if choice == '1':
             title = input('Enter task title: ')
@@ -52,6 +52,11 @@ def login():
             id = input('Enter task id You want to delete:: ')
             task_handler.delete_task(id=id)
         elif choice == '3':
+            id = input('Enter task id You want to update: ')
+            title = input('Enter task title: ')
+            description = input('Enter task description: ')
+            task_handler.update_task(id=id, title=title, description=description)
+        elif choice == '4':
             id = input('Enter task id You want to update: ')
             title = input('Enter task title: ')
             description = input('Enter task description: ')

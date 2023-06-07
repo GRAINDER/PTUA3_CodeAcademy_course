@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keliamieji metai</title>
+</head>
+<body>
+    <h1>Keliamieji metai nuo 1900 iki 2100:</h1>
+    <ul>
+    {% for year in leap_years %}
+        <li>{{ year }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

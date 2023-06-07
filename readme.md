@@ -1,1 +1,0 @@
-#This is my notes of my Pyhton CodeAcademy course
