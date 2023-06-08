@@ -1,21 +1,37 @@
 from typing import List
 from pymongo import MongoClient
 from pymongo.collection import Collection
-
-client = MongoClient("mongodb://localhost:27017/")
-db = client["Warehouse"]
-collection = db["Fruits"]
+from pymongo.errors import PyMongoError
 
 
-# # Filtering using $gte operator
-# def filter_by_greater_than_equal(collection: Collection, field_name: str, value: int) -> List[dict]:
-#     query = {field_name: {"$gte": value}}
-#     result = collection.find(query)
-#     return list(result)
 
+# Filtering using $gte operator
+def filter_by_greater_than_equal(collection: Collection, field_name: str, value: int) -> List[dict]:
+    try:
+        client = MongoClient("mongodb://localhost:27017/")
+        db = client["Warehouse"]
+        collection = db["Fruits"]
+
+        query = {field_name: {"$gte": value}}
+        result = collection.find(query)
+        # return list(result)
+        # Perform a quer
+            # Process the result
+        if result:
+            print('Found document:', result)
+        else:
+            print('Document not found.')
+            
+        # Close the MongoDB connection
+        # client.close()
+    except PyMongoError as e:
+        print('An error occurred:', str(e))
+
+# Call the function
+# filter_by_greater_than_equal()
 # # Example usage: Filter documents where the "age" field is greater than or equal to 25
 # filtered_greater_than_equal = filter_by_greater_than_equal(collection, "Price", 99)
-# # print(filtered_greater_than_equal)
+# print(filtered_greater_than_equal)
 
 
 # result_dict1 = {}
