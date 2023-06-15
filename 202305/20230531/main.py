@@ -7,38 +7,37 @@ client = MongoClient("mongodb://localhost:27017/")
 db = client["Warehouse"]
 collection = db["Fruits"]
 
-# # Filtering using $gte operator
-# def filter_by_greater_than_equal(collection: Collection, field_name: str, value: int) -> None:
-#     try:
-#         query = {field_name: {"$gte": value}}
-#         result = collection.find(query)
-#         # return list(result)
-#         # Perform a quer
-#             # Process the result
-#         if result:
-#             print('Found document:', result)
-#         else:
-#             print('Document not found.')
+# Filtering using $gte operator
+def filter_by_greater_than_equal(collection: Collection, field_name: str, value: int) -> List[dict]:
+    try:
+        query = {field_name: {"$gte": value}}
+        result = collection.find(query)
+        return result
+    
+        # if result:
+        #         print('Found document:', result)
+        # else:
+        #         print('Document not found.')
 
-#         # Close the MongoDB connection
-#         # client.close()
-#     except PyMongoError as e:
-#         print('An error occurred:', str(e))
+        # Close the MongoDB connection
+        # client.close()
+    except PyMongoError as e:
+        print('An error occurred:', str(e))
 
-# # Call the function
-# filter_by_greater_than_equal()
-# # Example usage: Filter documents where the "age" field is greater than or equal to 25
-# filtered_greater_than_equal = filter_by_greater_than_equal(collection, "Price", 99)
-# print(filtered_greater_than_equal)
-
-
-# result_dict1 = {}
-
-# for item in filtered_greater_than_equal:
-#     result_dict1[item["Name"]] = item["Quantity"]
+#Call the function 
+#filter_by_greater_than_equal()
+#Example usage: Filter documents where the "age" field is greater than or equal to 25
+filtered_greater_than_equal = filter_by_greater_than_equal(collection, "Price", 99)
+#print(filtered_greater_than_equal)
 
 
-# print(result_dict1)
+result_dict1 = {}
+
+for item in filtered_greater_than_equal:
+    result_dict1[item["Name"]] = item["Quantity"]
+
+
+print(result_dict1)
 
 
 # # Filtering using $lte operator
@@ -173,53 +172,3 @@ collection = db["Fruits"]
 #     print('Collection created successfully.')
 # else:
 #     print('Failed to create collection.')
-
-
-
-
-from pymongo import MongoClient
-from pymongo.errors import ConfigurationError, PyMongoError
-import json
-
-
-def connect_to_mongodb(config_file: str) -> MongoClient:
-    try:
-        # Read MongoDB configuration from file
-        # Assuming the configuration file is in JSON format
-        with open(config_file, 'r') as f:
-            config_data = json.load(f)
-        
-        # Extract configuration parameters
-        host = config_data.get('host', 'localhost')
-        port = config_data.get('port', 27017)
-        username = config_data.get('username')
-        password = config_data.get('password')
-        auth_source = config_data.get('auth_source')
-        
-        # Create a MongoDB connection string
-        connection_string = f"mongodb://{username}:{password}@{host}:{port}/{auth_source}"
-        
-        # Connect to MongoDB
-        client = MongoClient(connection_string)
-        
-        return client
-    
-    except ConfigurationError as e:
-        print('Configuration error:', str(e))
-        return None
-    
-    except PyMongoError as e:
-        print('An error occurred:', str(e))
-        return None
-
-# Usage
-config_file = 'mongodb_config.json'
-
-client = connect_to_mongodb(config_file)
-
-if client is not None:
-    # Perform database operations using the client object
-    # ...
-    print('Connected to MongoDB successfully.')
-else:
-    print('Failed to connect to MongoDB.')
