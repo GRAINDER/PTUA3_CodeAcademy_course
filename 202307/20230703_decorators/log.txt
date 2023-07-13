@@ -1,0 +1,4 @@
+Arguments: 2, 3
+Result: 6
+Arguments: 4, 5
+Result: 20
