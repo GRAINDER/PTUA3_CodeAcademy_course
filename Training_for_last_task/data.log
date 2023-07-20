@@ -1,0 +1,45 @@
+20/07/2023 18:27:01 - root - INFO - CPU Name: AMD Ryzen 5 5600X
+20/07/2023 18:27:01 - root - INFO - CPU Price: 162.66
+20/07/2023 18:27:01 - root - INFO - CPU Brand: AMD
+20/07/2023 18:27:01 - root - INFO - CPU Speed: 3.7GHz
+20/07/2023 18:27:01 - root - INFO - CPU Power Usage: 65W
+20/07/2023 18:28:31 - root - INFO - CPU Name: AMD Ryzen 5 5600X
+20/07/2023 18:28:31 - root - INFO - CPU Price: 162.66
+20/07/2023 18:28:31 - root - INFO - CPU Brand: AMD
+20/07/2023 18:28:31 - root - INFO - CPU Speed: 3.7GHz
+20/07/2023 18:28:31 - root - INFO - CPU Power Usage: 65W
+20/07/2023 18:31:13 - root - INFO - CPU full info: AMD
+20/07/2023 18:31:35 - root - INFO - CPU full info: AMD AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+20/07/2023 18:34:28 - root - INFO - CPU full info: AMD AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+20/07/2023 18:34:28 - root - INFO - CPU cooler full info: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+20/07/2023 18:36:51 - root - INFO - CPU full info: AMD AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+20/07/2023 18:36:51 - root - INFO - CPU cooler full info: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+20/07/2023 18:36:51 - root - INFO - CPU Mother Board full info: MSI MAG B550 TOMAHAWK, 169.99, Memory: 128 GB, Memory_slots: 4, Color: Black/Silver
+20/07/2023 18:38:08 - root - INFO - CPU full info: AMD AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+20/07/2023 18:38:08 - root - INFO - CPU cooler full info: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+20/07/2023 18:38:08 - root - INFO - CPU Mother Board full info: MSI MAG B550 TOMAHAWK, 169.99, Memory: 128 GB, Memory_slots: 4, Color: Black/Silver
+20/07/2023 18:43:36 - root - INFO - CPU full info: AMD AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+20/07/2023 18:43:36 - root - INFO - CPU cooler full info: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+20/07/2023 18:43:36 - root - INFO - CPU Mother Board full info: MSI MAG B550 TOMAHAWK, 169.99, Memory: 128 GB, Memory_slots: 4, Color: Black/Silver
+20/07/2023 18:43:36 - root - INFO - CPU Memory full info: Corsair Vengeance LPX 16 GB, 37.99, speed: DDR4-3200, modules: 2 x 8GB, Color: Black/Yellow
+20/07/2023 18:46:43 - root - INFO - CPU full info: AMD AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+20/07/2023 18:46:43 - root - INFO - CPU cooler full info: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+20/07/2023 18:46:43 - root - INFO - CPU Mother Board full info: MSI MAG B550 TOMAHAWK, 169.99, Memory: 128 GB, Memory_slots: 4, Color: Black/Silver
+20/07/2023 18:46:43 - root - INFO - CPU Memory full info: Corsair Vengeance LPX 16 GB, 37.99, speed: DDR4-3200, modules: 2 x 8GB, Color: Black/Yellow
+20/07/2023 18:46:43 - root - INFO - CPU Storage full info: Samsung 980 Pro, capacity: 2 TB, cache: 2048 MB, cache: SSD
+20/07/2023 18:47:20 - root - INFO - CPU full info: AMD AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+20/07/2023 18:47:20 - root - INFO - CPU cooler full info: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+20/07/2023 18:47:20 - root - INFO - CPU Mother Board full info: MSI MAG B550 TOMAHAWK, 169.99, Memory: 128 GB, Memory_slots: 4, Color: Black/Silver
+20/07/2023 18:47:20 - root - INFO - CPU Memory full info: Corsair Vengeance LPX 16 GB, 37.99, speed: DDR4-3200, modules: 2 x 8GB, Color: Black/Yellow
+20/07/2023 18:47:20 - root - INFO - CPU Storage full info: Samsung 980 Pro, capacity: 2 TB, cache: 2048 MB, type: SSD
+20/07/2023 18:49:43 - root - INFO - CPU full info: Brand: AMD Name: AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+20/07/2023 18:49:43 - root - INFO - CPU cooler full info: Name: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+20/07/2023 18:49:43 - root - INFO - CPU Mother Board full info: Name: MSI MAG B550 TOMAHAWK, Price: 169.99, Memory: 128 GB, Memory_slots: 4, Color: Black/Silver
+20/07/2023 18:49:43 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
+20/07/2023 18:49:43 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
+20/07/2023 18:53:09 - root - INFO - CPU full info: Brand: AMD Name: AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+20/07/2023 18:53:09 - root - INFO - CPU cooler full info: Name: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+20/07/2023 18:53:09 - root - INFO - CPU Mother Board full info: Name: MSI MAG B550 TOMAHAWK, Price: 169.99, Memory: 128 GB, Memory Slots: 4, Color: Black/Silver
+20/07/2023 18:53:09 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
+20/07/2023 18:53:09 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
+20/07/2023 18:53:09 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black

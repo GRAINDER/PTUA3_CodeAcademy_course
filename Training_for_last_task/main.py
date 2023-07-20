@@ -1,7 +1,25 @@
 import data
+#from crud_op_for_db import add_info, delete_info, update_info
+import logging
 from abc import ABC, abstractmethod
 from typing import Dict, Any, Optional
 
+logging.basicConfig(level=logging.DEBUG, filename='data.log', filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
+
+"""Create a class that would represent pc parts. 
+It should contain basic methods to retreive items name, price, colour (if applicable).
+PC part list can be found here: https://pcpartpicker.com/list/
+The every separate part should have at least 3-4 methods to gather this part specific data (example: CPU - brand , speed, power usuage etc.)
+At this stage, dictionary data structures can work as Database. 
+OOP abstraction, inheritance and encapsulation must be presented in a code base. 
+Unit tests must be written for the methods."""
+
+
+"""Phase 2: Add logging to all necessary functionality to see the data flow (with logger config.).
+Add exception handling , describe your own exceptions if necessary. 
+Create functions that would update current datasets (database). 
+Add functions that would parse durrent datasets(database) by specific parameters (CPU name = 'AMD') 
+Use  List, Dict comprehentions to get parsed data."""
 
 class PCPart(ABC):
     def __init__(self, part_info: Dict[str, Any]):
@@ -17,7 +35,7 @@ class PCPart(ABC):
     @staticmethod
     def is_high_price() -> bool:
         return data.cpu_info["price"] > 200
-    
+
     @abstractmethod
     def get_info(self):
         pass
@@ -42,7 +60,7 @@ class CPU(PCPart):
         return self.power_usage
 
     def get_info(self):
-        return f"{self.brand} {self.name}, Price: {self.price} Speed: {self.speed}, Power Usage: {self.power_usage}"
+        return f"Brand: {self.brand} Name: {self.name}, Price: {self.price} Speed: {self.speed}, Power Usage: {self.power_usage}"
 
 
 class CPUCooler(PCPart):
@@ -64,7 +82,7 @@ class CPUCooler(PCPart):
         return self.color
 
     def get_info(self):
-        return f"{self.name}, Price, {self.price}, Noise Level: {self.noise_level}, Fan: {self.fan}, Color: {self.color}"
+        return f"Name: {self.name}, Price, {self.price}, Noise Level: {self.noise_level}, Fan: {self.fan}, Color: {self.color}"
 
 
 class CPUMotherBoard(PCPart):
@@ -86,7 +104,7 @@ class CPUMotherBoard(PCPart):
         return self.color
 
     def get_info(self):
-        return f"{self.name}, {self.price}, Memory: {self.memory}, Memory_slots: {self.memory_slots}, Color: {self.color}"
+        return f"Name: {self.name}, Price: {self.price}, Memory: {self.memory}, Memory Slots: {self.memory_slots}, Color: {self.color}"
 
 
 class CPUMemory(PCPart):
@@ -108,10 +126,7 @@ class CPUMemory(PCPart):
         return self.color
 
     def get_info(self):
-        return f"{self.name}, {self.price}, speed: {self.speed}, modules: {self.modules}, Color: {self.color}"
-
-
-
+        return f"Name: {self.name}, Price: {self.price}, Speed: {self.speed}, Modules: {self.modules}, Color: {self.color}"
 
 
 class CPUStorage(PCPart):
@@ -133,7 +148,7 @@ class CPUStorage(PCPart):
         return self.type
 
     def get_info(self):
-        return f"{self.name}, capacity: {self.capaciy}, cache: {self.cache}, cache: {self.type}"
+        return f"Name: {self.name}, Capacity: {self.capaciy}, Cache: {self.cache}, Type: {self.type}"
 
 
 class CPUVideoCard(PCPart):
@@ -155,83 +170,109 @@ class CPUVideoCard(PCPart):
         return self.color
 
     def get_info(self):
-        return f"{self.name}, capacity: {self.chipset}, cache: {self.memory}, cache: {self.color}"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        return f"Name: {self.name}, Capacity: {self.chipset}, Cache: {self.memory}, Color: {self.color}"
 
 
 if __name__ == "__main__":
+    try:
+        cpu = CPU(data.cpu_info)
+        print("CPU Information:")
+        # print("name:", cpu.get_name())
+        # print("price:", cpu.get_price())
+        # print("brand:", cpu.get_brand())
+        # print("Speed:", cpu.get_speed())
+        # print("Power Usage:", cpu.get_power_usage())
+        # print("Is higher price:", cpu.is_high_price())
+        # logging.info(f"CPU Name: {cpu.get_name()}")
+        # logging.info(f"CPU Price: {cpu.get_price()}")
+        # logging.info(f"CPU Brand: {cpu.get_brand()}")
+        # logging.info(f"CPU Speed: {cpu.get_speed()}")
+        # logging.info(f"CPU Power Usage: {cpu.get_power_usage()}")
+        logging.info(f"CPU full info: {cpu.get_info()}")
+        print("info:", cpu.get_info())
 
+    except Exception as e:
+        # Logging error if any exception occurs
+        logging.error(f"Error: {str(e)}")
+        print("An error occurred. Please check the log file for details.")
 
-    cpu = CPU(data.cpu_info)
-    cpu_cooler = CPUCooler(data.cpu_cooler_info)
-    cpu_mother_board = CPUMotherBoard(data.monitor_info)
-    cpu_memory = CPUMemory(data.memory_info)
-    cpu_storage = CPUStorage(data.storage_info)
-    cpu_video_card = CPUVideoCard(data.video_card_info)
+    try:
+        cpu_cooler = CPUCooler(data.cpu_cooler_info)
+        print("\nCPU Cooler Information:")
+        # print("name:", cpu_cooler.get_name())
+        # print("price:", cpu_cooler.get_price())
+        # print("color:", cpu_cooler.get_color())
+        # print("noice level:", cpu_cooler.get_noise_level())
+        # print("fan:", cpu_cooler.get_fan())
+        logging.info(f"CPU cooler full info: {cpu_cooler.get_info()}")
+        print("info:", cpu_cooler.get_info())
 
+    except Exception as e:
+        # Logging error if any exception occurs
+        logging.error(f"Error: {str(e)}")
+        print("An error occurred. Please check the log file for details.")
 
-    print("CPU Information:")
-    # print("name:", cpu.get_name())
-    # print("price:", cpu.get_price())
-    # print("brand:", cpu.get_brand())
-    # print("Speed:", cpu.get_speed())
-    # print("Power Usage:", cpu.get_power_usage())
-    # print("Is higher price:", cpu.is_high_price())
-    print("info:", cpu.get_info())
+    try:
+        cpu_mother_board = CPUMotherBoard(data.motherboard_info)
+        print("\nCPU Mother Board Information:")
+        # print("name:", cpu_mother_board.get_name())
+        # print("price:", cpu_mother_board.get_price())
+        # print("color:", cpu_mother_board.get_color())
+        # print("noice level:", cpu_mother_board.get_noise_level())
+        # print("fan:", cpu_mother_board.get_fan())
+        logging.info(
+            f"CPU Mother Board full info: {cpu_mother_board.get_info()}")
+        print("info:", cpu_mother_board.get_info())
 
-    print("\nCPU Cooler Information:")
-    # print("name:", cpu_cooler.get_name())
-    # print("price:", cpu_cooler.get_price())
-    # print("color:", cpu_cooler.get_color())
-    # print("noice level:", cpu_cooler.get_noise_level())
-    # print("fan:", cpu_cooler.get_fan())
-    print("info:", cpu_cooler.get_info())
+    except Exception as e:
+        # Logging error if any exception occurs
+        logging.error(f"Error: {str(e)}")
+        print("An error occurred. Please check the log file for details.")
 
-    print("\nCPU Mother Board Information:")
-    # print("name:", cpu_mother_board.get_name())
-    # print("price:", cpu_mother_board.get_price())
-    # print("color:", cpu_mother_board.get_color())
-    # print("noice level:", cpu_mother_board.get_noise_level())
-    # print("fan:", cpu_mother_board.get_fan())
-    print("info:", cpu_mother_board.get_info())
+    try:
+        cpu_memory = CPUMemory(data.memory_info)
+        print("\nCPU Memory Information:")
+        # print("name:", cpu_memory.get_name())
+        # print("price:", cpu_memory.get_price())
+        # print("color:", cpu_memory.get_color())
+        # print("noice level:", cpu_memory.get_noise_level())
+        # print("fan:", cpu_memory.get_fan())
+        logging.info(f"CPU Memory full info: {cpu_memory.get_info()}")
+        print("info:", cpu_memory.get_info())
 
+    except Exception as e:
+        # Logging error if any exception occurs
+        logging.error(f"Error: {str(e)}")
+        print("An error occurred. Please check the log file for details.")
 
-    print("\nCPU Memory Information:")
-    # print("name:", cpu_memory.get_name())
-    # print("price:", cpu_memory.get_price())
-    # print("color:", cpu_memory.get_color())
-    # print("noice level:", cpu_memory.get_noise_level())
-    # print("fan:", cpu_memory.get_fan())
-    print("info:", cpu_memory.get_info())
+    try:
+        cpu_storage = CPUStorage(data.storage_info)
+        print("\nCPU Storage Information:")
+        # print("name:", cpu_storage.get_name())
+        # print("price:", cpu_storage.get_price())
+        # print("capacity:", cpu_storage.get_capacity())
+        # print("cashe:", cpu_storage.get_cache())
+        # print("type:", cpu_storage.get_type())
+        logging.info(f"CPU Storage full info: {cpu_storage.get_info()}")
+        print("info:", cpu_storage.get_info())
 
+    except Exception as e:
+        # Logging error if any exception occurs
+        logging.error(f"Error: {str(e)}")
+        print("An error occurred. Please check the log file for details.")
 
-    print("\nCPU Storage Information:")
-    # print("name:", cpu_storage.get_name())
-    # print("price:", cpu_storage.get_price())
-    # print("capacity:", cpu_storage.get_capacity())
-    # print("cashe:", cpu_storage.get_cache())
-    # print("type:", cpu_storage.get_type())
-    print("info:", cpu_storage.get_info())
+    try:
+        cpu_video_card = CPUVideoCard(data.video_card_info)
+        print("\nCPU Video Card Information:")
+        # print("name:", cpu_storage.get_name())
+        # print("price:", cpu_storage.get_price())
+        # print("capacity:", cpu_storage.get_capacity())
+        # print("cashe:", cpu_storage.get_cache())
+        # print("type:", cpu_storage.get_type())
+        logging.info(f"CPU Video Card full info: {cpu_video_card.get_info()}")
+        print("info:", cpu_video_card.get_info())
 
-    print("\nCPU Video Card Information:")
-    # print("name:", cpu_storage.get_name())
-    # print("price:", cpu_storage.get_price())
-    # print("capacity:", cpu_storage.get_capacity())
-    # print("cashe:", cpu_storage.get_cache())
-    # print("type:", cpu_storage.get_type())
-    print("info:", cpu_video_card.get_info())
+    except Exception as e:
+        # Logging error if any exception occurs
+        logging.error(f"Error: {str(e)}")
+        print("An error occurred. Please check the log file for details.")
