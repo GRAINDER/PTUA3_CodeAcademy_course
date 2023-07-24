@@ -83,3 +83,11 @@ monitor_info  = {
 
 
 
+master_info = {
+    "cpu": cpu_info,
+    "cpu cooler": cpu_cooler_info,
+    "motherboard": motherboard_info,
+    "memory": memory_info,
+    "storage": storage_info,
+    "video card": video_card_info,
+}

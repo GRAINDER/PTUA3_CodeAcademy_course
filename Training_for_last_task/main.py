@@ -23,8 +23,16 @@ Use  List, Dict comprehentions to get parsed data."""
 
 class PCPart(ABC):
     def __init__(self, part_info: Dict[str, Any]):
-        self.name = data.cpu_info["name"]
-        self.price = data.cpu_info["price"]
+
+        try:
+            self.source = "PC part picker"
+            self.name = part_info["name"]
+            self.price = part_info["price"]
+
+        except KeyError:
+            logging.error(KeyError)
+            logging.error("name or price is missing")
+
 
     def get_name(self) -> str:
         return self.name
@@ -44,8 +52,6 @@ class PCPart(ABC):
 class CPU(PCPart):
     def __init__(self, part_info: Dict[str, Any]):
         super().__init__(part_info)
-        self.name = data.cpu_info["name"]
-        self.price = data.cpu_info["price"]
         self.brand = data.cpu_info["brand"]
         self.speed = data.cpu_info["speed"]
         self.power_usage = data.cpu_info["power_usage"]
@@ -66,8 +72,6 @@ class CPU(PCPart):
 class CPUCooler(PCPart):
     def __init__(self, part_info: Dict[str, Any]):
         super().__init__(part_info)
-        self.name = data.cpu_cooler_info["name"]
-        self.price = data.cpu_cooler_info["price"]
         self.noise_level = data.cpu_cooler_info["noise_level"]
         self.fan = data.cpu_cooler_info["fan"]
         self.color = data.cpu_cooler_info["color"]
@@ -88,8 +92,6 @@ class CPUCooler(PCPart):
 class CPUMotherBoard(PCPart):
     def __init__(self, part_info: Dict[str, Any]):
         super().__init__(part_info)
-        self.name = data.motherboard_info["name"]
-        self.price = data.motherboard_info["price"]
         self.memory = data.motherboard_info["memory"]
         self.memory_slots = data.motherboard_info["memory_slots"]
         self.color = data.motherboard_info["color"]
@@ -110,8 +112,6 @@ class CPUMotherBoard(PCPart):
 class CPUMemory(PCPart):
     def __init__(self, part_info: Dict[str, Any]):
         super().__init__(part_info)
-        self.name = data.memory_info["name"]
-        self.price = data.memory_info["price"]
         self.speed = data.memory_info["speed"]
         self.modules = data.memory_info["modules"]
         self.color = data.memory_info["color"]
@@ -132,8 +132,6 @@ class CPUMemory(PCPart):
 class CPUStorage(PCPart):
     def __init__(self, part_info: Dict[str, Any]):
         super().__init__(part_info)
-        self.name = data.storage_info["name"]
-        self.price = data.storage_info["price"]
         self.capaciy = data.storage_info["capaciy"]
         self.cache = data.storage_info["cache"]
         self.type = data.storage_info["type"]
@@ -154,8 +152,6 @@ class CPUStorage(PCPart):
 class CPUVideoCard(PCPart):
     def __init__(self, part_info: Dict[str, Any]):
         super().__init__(part_info)
-        self.name = data.video_card_info["name"]
-        self.price = data.video_card_info["price"]
         self.chipset = data.video_card_info["chipset"]
         self.memory = data.video_card_info["memory"]
         self.color = data.video_card_info["color"]
@@ -174,8 +170,10 @@ class CPUVideoCard(PCPart):
 
 
 if __name__ == "__main__":
+
     try:
         cpu = CPU(data.cpu_info)
+        print(cpu.source)
         print("CPU Information:")
         # print("name:", cpu.get_name())
         # print("price:", cpu.get_price())
@@ -189,15 +187,17 @@ if __name__ == "__main__":
         # logging.info(f"CPU Speed: {cpu.get_speed()}")
         # logging.info(f"CPU Power Usage: {cpu.get_power_usage()}")
         logging.info(f"CPU full info: {cpu.get_info()}")
-        print("info:", cpu.get_info())
+        print(cpu.get_info())
 
     except Exception as e:
         # Logging error if any exception occurs
+        print(e)
         logging.error(f"Error: {str(e)}")
         print("An error occurred. Please check the log file for details.")
 
     try:
         cpu_cooler = CPUCooler(data.cpu_cooler_info)
+        print(cpu_cooler.source)
         print("\nCPU Cooler Information:")
         # print("name:", cpu_cooler.get_name())
         # print("price:", cpu_cooler.get_price())
@@ -205,7 +205,7 @@ if __name__ == "__main__":
         # print("noice level:", cpu_cooler.get_noise_level())
         # print("fan:", cpu_cooler.get_fan())
         logging.info(f"CPU cooler full info: {cpu_cooler.get_info()}")
-        print("info:", cpu_cooler.get_info())
+        print(cpu_cooler.get_info())
 
     except Exception as e:
         # Logging error if any exception occurs
@@ -222,7 +222,7 @@ if __name__ == "__main__":
         # print("fan:", cpu_mother_board.get_fan())
         logging.info(
             f"CPU Mother Board full info: {cpu_mother_board.get_info()}")
-        print("info:", cpu_mother_board.get_info())
+        print(cpu_mother_board.get_info())
 
     except Exception as e:
         # Logging error if any exception occurs
@@ -238,7 +238,7 @@ if __name__ == "__main__":
         # print("noice level:", cpu_memory.get_noise_level())
         # print("fan:", cpu_memory.get_fan())
         logging.info(f"CPU Memory full info: {cpu_memory.get_info()}")
-        print("info:", cpu_memory.get_info())
+        print(cpu_memory.get_info())
 
     except Exception as e:
         # Logging error if any exception occurs
@@ -254,7 +254,7 @@ if __name__ == "__main__":
         # print("cashe:", cpu_storage.get_cache())
         # print("type:", cpu_storage.get_type())
         logging.info(f"CPU Storage full info: {cpu_storage.get_info()}")
-        print("info:", cpu_storage.get_info())
+        print(cpu_storage.get_info())
 
     except Exception as e:
         # Logging error if any exception occurs
@@ -270,7 +270,7 @@ if __name__ == "__main__":
         # print("cashe:", cpu_storage.get_cache())
         # print("type:", cpu_storage.get_type())
         logging.info(f"CPU Video Card full info: {cpu_video_card.get_info()}")
-        print("info:", cpu_video_card.get_info())
+        print(cpu_video_card.get_info())
 
     except Exception as e:
         # Logging error if any exception occurs
