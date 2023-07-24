@@ -43,3 +43,71 @@
 20/07/2023 18:53:09 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
 20/07/2023 18:53:09 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
 20/07/2023 18:53:09 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black
+21/07/2023 08:27:45 - root - INFO - CPU full info: Brand: AMD Name: AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+21/07/2023 08:27:45 - root - INFO - CPU cooler full info: Name: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+21/07/2023 08:27:45 - root - INFO - CPU Mother Board full info: Name: MSI MAG B550 TOMAHAWK, Price: 169.99, Memory: 128 GB, Memory Slots: 4, Color: Black/Silver
+21/07/2023 08:27:45 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
+21/07/2023 08:27:45 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
+21/07/2023 08:27:45 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black
+21/07/2023 08:44:47 - root - INFO - CPU full info: Brand: AMD Name: AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+21/07/2023 08:44:47 - root - INFO - CPU cooler full info: Name: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+21/07/2023 08:44:47 - root - INFO - CPU Mother Board full info: Name: MSI MAG B550 TOMAHAWK, Price: 169.99, Memory: 128 GB, Memory Slots: 4, Color: Black/Silver
+21/07/2023 08:44:47 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
+21/07/2023 08:44:47 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
+21/07/2023 08:44:47 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black
+21/07/2023 08:47:16 - root - INFO - CPU full info: Brand: AMD Name: AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+21/07/2023 08:47:16 - root - INFO - CPU cooler full info: Name: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+21/07/2023 08:47:16 - root - INFO - CPU Mother Board full info: Name: MSI MAG B550 TOMAHAWK, Price: 169.99, Memory: 128 GB, Memory Slots: 4, Color: Black/Silver
+21/07/2023 08:47:16 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
+21/07/2023 08:47:16 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
+21/07/2023 08:47:16 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black
+21/07/2023 08:50:20 - root - ERROR - Error: 'name'
+21/07/2023 08:50:20 - root - ERROR - Error: 'name'
+21/07/2023 08:50:20 - root - ERROR - Error: 'name'
+21/07/2023 08:50:20 - root - ERROR - Error: 'name'
+21/07/2023 08:50:20 - root - ERROR - Error: 'name'
+21/07/2023 08:50:20 - root - ERROR - Error: 'name'
+21/07/2023 08:51:59 - root - ERROR - Error: 'name'
+21/07/2023 08:51:59 - root - ERROR - Error: 'name'
+21/07/2023 08:51:59 - root - ERROR - Error: 'name'
+21/07/2023 08:51:59 - root - ERROR - Error: 'name'
+21/07/2023 08:51:59 - root - ERROR - Error: 'name'
+21/07/2023 08:51:59 - root - ERROR - Error: 'name'
+21/07/2023 08:56:12 - root - ERROR - <class 'KeyError'>
+21/07/2023 08:56:12 - root - ERROR - Error: 'name'
+21/07/2023 08:56:12 - root - ERROR - <class 'KeyError'>
+21/07/2023 08:56:12 - root - INFO - CPU cooler full info: Name: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+21/07/2023 08:56:12 - root - ERROR - <class 'KeyError'>
+21/07/2023 08:56:12 - root - INFO - CPU Mother Board full info: Name: MSI MAG B550 TOMAHAWK, Price: 169.99, Memory: 128 GB, Memory Slots: 4, Color: Black/Silver
+21/07/2023 08:56:12 - root - ERROR - <class 'KeyError'>
+21/07/2023 08:56:12 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
+21/07/2023 08:56:12 - root - ERROR - <class 'KeyError'>
+21/07/2023 08:56:12 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
+21/07/2023 08:56:12 - root - ERROR - <class 'KeyError'>
+21/07/2023 08:56:12 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black
+21/07/2023 08:59:38 - root - ERROR - <class 'KeyError'>
+21/07/2023 08:59:38 - root - ERROR - name or price is missing
+21/07/2023 08:59:38 - root - ERROR - Error: 'name'
+21/07/2023 08:59:38 - root - INFO - CPU cooler full info: Name: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+21/07/2023 08:59:38 - root - INFO - CPU Mother Board full info: Name: MSI MAG B550 TOMAHAWK, Price: 169.99, Memory: 128 GB, Memory Slots: 4, Color: Black/Silver
+21/07/2023 08:59:38 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
+21/07/2023 08:59:38 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
+21/07/2023 08:59:38 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black
+21/07/2023 09:00:00 - root - INFO - CPU full info: Brand: AMD Name: AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+21/07/2023 09:00:00 - root - INFO - CPU cooler full info: Name: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+21/07/2023 09:00:00 - root - INFO - CPU Mother Board full info: Name: MSI MAG B550 TOMAHAWK, Price: 169.99, Memory: 128 GB, Memory Slots: 4, Color: Black/Silver
+21/07/2023 09:00:00 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
+21/07/2023 09:00:00 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
+21/07/2023 09:00:00 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black
+21/07/2023 09:01:14 - root - INFO - CPU full info: Brand: AMD Name: AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+21/07/2023 09:01:14 - root - INFO - CPU cooler full info: Name: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+21/07/2023 09:01:14 - root - INFO - CPU Mother Board full info: Name: MSI MAG B550 TOMAHAWK, Price: 169.99, Memory: 128 GB, Memory Slots: 4, Color: Black/Silver
+21/07/2023 09:01:14 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
+21/07/2023 09:01:14 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
+21/07/2023 09:01:14 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black
+21/07/2023 09:02:32 - root - INFO - CPU full info: Brand: AMD Name: AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+21/07/2023 09:02:32 - root - INFO - CPU cooler full info: Name: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+21/07/2023 09:02:32 - root - INFO - CPU Mother Board full info: Name: MSI MAG B550 TOMAHAWK, Price: 169.99, Memory: 128 GB, Memory Slots: 4, Color: Black/Silver
+21/07/2023 09:02:32 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
+21/07/2023 09:02:32 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
+21/07/2023 09:02:32 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black
