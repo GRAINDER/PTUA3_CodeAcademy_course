@@ -55,7 +55,7 @@ def update_info_in_dict(info_dict):
     if name in info_dict:
         updated_info = {}
         price = input(
-            "Enter the updated price (leave blank to keep the current value): ")
+            "Enter the updated price (le3ave blank to keep the current value): ")
         if price:
             updated_info["price"] = float(price)
 
