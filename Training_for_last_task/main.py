@@ -23,7 +23,6 @@ Use  List, Dict comprehentions to get parsed data."""
 
 class PCPart(ABC):
     def __init__(self, part_info: Dict[str, Any]):
-
         try:
             self.source = "PC part picker"
             self.name = part_info["name"]
@@ -52,9 +51,14 @@ class PCPart(ABC):
 class CPU(PCPart):
     def __init__(self, part_info: Dict[str, Any]):
         super().__init__(part_info)
-        self.brand = data.cpu_info["brand"]
-        self.speed = data.cpu_info["speed"]
-        self.power_usage = data.cpu_info["power_usage"]
+        try:
+            self.brand = data.cpu_info["brand"]
+            self.speed = data.cpu_info["speed"]
+            self.power_usage = data.cpu_info["power_usage"]
+
+        except KeyError:
+            logging.error(KeyError)
+            logging.error("brand, speed or power usage is missing")
 
     def get_brand(self) -> str:
         return self.brand
@@ -72,9 +76,14 @@ class CPU(PCPart):
 class CPUCooler(PCPart):
     def __init__(self, part_info: Dict[str, Any]):
         super().__init__(part_info)
-        self.noise_level = data.cpu_cooler_info["noise_level"]
-        self.fan = data.cpu_cooler_info["fan"]
-        self.color = data.cpu_cooler_info["color"]
+        try:
+            self.noise_level = data.cpu_cooler_info["noise_level"]
+            self.fan = data.cpu_cooler_info["fan"]
+            self.color = data.cpu_cooler_info["color"]
+
+        except KeyError:
+            logging.error(KeyError)
+            logging.error("noise level, fan or color is missing")
 
     def get_noise_level(self) -> str:
         return self.noise_level
@@ -92,9 +101,15 @@ class CPUCooler(PCPart):
 class CPUMotherBoard(PCPart):
     def __init__(self, part_info: Dict[str, Any]):
         super().__init__(part_info)
-        self.memory = data.motherboard_info["memory"]
-        self.memory_slots = data.motherboard_info["memory_slots"]
-        self.color = data.motherboard_info["color"]
+        try:
+
+            self.memory = data.motherboard_info["memory"]
+            self.memory_slots = data.motherboard_info["memory_slots"]
+            self.color = data.motherboard_info["color"]
+        
+        except KeyError:
+            logging.error(KeyError)
+            logging.error("memory, memory_slots or color usage is missing")
 
     def get_memory(self) -> str:
         return self.memory
@@ -112,9 +127,14 @@ class CPUMotherBoard(PCPart):
 class CPUMemory(PCPart):
     def __init__(self, part_info: Dict[str, Any]):
         super().__init__(part_info)
-        self.speed = data.memory_info["speed"]
-        self.modules = data.memory_info["modules"]
-        self.color = data.memory_info["color"]
+        try:
+            self.speed = data.memory_info["speed"]
+            self.modules = data.memory_info["modules"]
+            self.color = data.memory_info["color"]
+            
+        except KeyError:
+            logging.error(KeyError)
+            logging.error("speed, modules or color is missing")
 
     def get_speed(self) -> str:
         return self.speed
@@ -132,9 +152,14 @@ class CPUMemory(PCPart):
 class CPUStorage(PCPart):
     def __init__(self, part_info: Dict[str, Any]):
         super().__init__(part_info)
-        self.capaciy = data.storage_info["capaciy"]
-        self.cache = data.storage_info["cache"]
-        self.type = data.storage_info["type"]
+        try:
+            self.capaciy = data.storage_info["capaciy"]
+            self.cache = data.storage_info["cache"]
+            self.type = data.storage_info["type"]
+                        
+        except KeyError:
+            logging.error(KeyError)
+            logging.error("speed, modules or color is missing")
 
     def get_capacity(self) -> str:
         return self.capaciy
@@ -152,9 +177,15 @@ class CPUStorage(PCPart):
 class CPUVideoCard(PCPart):
     def __init__(self, part_info: Dict[str, Any]):
         super().__init__(part_info)
-        self.chipset = data.video_card_info["chipset"]
-        self.memory = data.video_card_info["memory"]
-        self.color = data.video_card_info["color"]
+        try:
+
+            self.chipset = data.video_card_info["chipset"]
+            self.memory = data.video_card_info["memory"]
+            self.color = data.video_card_info["color"]
+                    
+        except KeyError:
+            logging.error(KeyError)
+            logging.error("speed, modules or color is missing")
 
     def get_chipset(self) -> str:
         return self.chipset

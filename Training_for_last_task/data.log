@@ -120,3 +120,20 @@
 21/07/2023 09:02:32 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
 21/07/2023 09:02:32 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black
 >>>>>>> d32d718c485acdf58e6e72129290d4b9c8e4d1dc
+24/07/2023 18:41:09 - root - INFO - CPU full info: Brand: AMD Name: AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+24/07/2023 18:41:09 - root - INFO - CPU cooler full info: Name: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+24/07/2023 18:41:09 - root - INFO - CPU Mother Board full info: Name: MSI MAG B550 TOMAHAWK, Price: 169.99, Memory: 128 GB, Memory Slots: 4, Color: Black/Silver
+24/07/2023 18:41:09 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
+24/07/2023 18:41:09 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
+24/07/2023 18:41:09 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black
+24/07/2023 18:51:53 - root - INFO - CPU full info: Brand: AMD Name: AMD Ryzen 5 5600X, Price: 162.66 Speed: 3.7GHz, Power Usage: 65W
+24/07/2023 18:51:53 - root - INFO - CPU cooler full info: Name: be quiet! Dark Rock Pro 4, Price, 89.9, Noise Level: 12.8 - 24.3 dB, Fan: 1500 RPM, Color: black
+24/07/2023 18:51:53 - root - INFO - CPU Mother Board full info: Name: MSI MAG B550 TOMAHAWK, Price: 169.99, Memory: 128 GB, Memory Slots: 4, Color: Black/Silver
+24/07/2023 18:51:53 - root - INFO - CPU Memory full info: Name: Corsair Vengeance LPX 16 GB, Price: 37.99, Speed: DDR4-3200, Modules: 2 x 8GB, Color: Black/Yellow
+24/07/2023 18:51:53 - root - INFO - CPU Storage full info: Name: Samsung 980 Pro, Capacity: 2 TB, Cache: 2048 MB, Type: SSD
+24/07/2023 18:51:53 - root - INFO - CPU Video Card full info: Name: MSI GeForce RTX 3060 Ventus 2X 12G, Capacity: GeForce RTX 3060 12GB, Cache: 12 GB, Color: black
+26/07/2023 20:05:20 - crudv5 - ERROR - The key 'gender' does not exist in the dictionary.
+27/07/2023 18:14:06 - root - ERROR - The dictionary '4' does not exist.
+27/07/2023 18:28:38 - root - ERROR - The dictionary '1' does not exist.
+27/07/2023 18:28:51 - root - ERROR - The dictionary 'a' does not exist.
+27/07/2023 18:29:30 - root - ERROR - The key 'gender' does not exist in the dictionary.
